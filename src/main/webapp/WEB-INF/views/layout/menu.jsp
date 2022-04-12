@@ -6,7 +6,7 @@
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/home/index">
+			<a href="/home/index">
 				<s:message code="lyt.menu.home"/>
 			</a>
 		</div>
@@ -20,17 +20,17 @@
 				<c:choose>
 					<c:when test="${empty sessionScope.user }">
 						<ul class="dropdown-menu">
-							<li><a href="/account/login">Login</a></li>
-							<li><a href="/account/register">Register</a></li>
-							<li><a href="/account/forgot">Forgot password</a></li>
+							<li><a href="/account/login">Đăng nhập</a></li>
+							<li><a href="/account/register">Đăng ký</a></li>
+							<li><a href="/account/forgot">Quên mật khẩu</a></li>
 						</ul>
 					</c:when>
 					<c:otherwise>
 						<ul class="dropdown-menu">
-							<li><a href="/account/logout">Log Out</a></li>
-							<li><a href="/account/change">Change password</a></li>
-							<li><a href="/account/edit">Update Account</a></li>
-							<li><a href="/order/list">Order</a></li>
+							<li><a href="/account/logout">Đăng xuất</a></li>
+							<li><a href="/account/change">Đổi mật khẩu</a></li>
+							<li><a href="/account/edit">Cấp quyền</a></li>
+							<li><a href="/order/list">Đặt hàng</a></li>
 							<li><a href="/order/items">Goods purchases</a></li>
 						</ul>
 					</c:otherwise>
@@ -79,11 +79,11 @@
 <nav class="navbar navbar-expand-sm navbar-dark"
 	style="margin-top: -20px; background-color: #111111">
 	<div class="container-fluid"
-		style="height: 30px; padding: 0px 60px 0px 60px">
-		<ul class="navbar-nav" style="margin-right: 450px">
+		style="height: 30px; ">
+		<ul  style="margin-right: 450px">
 			<li
-				style="width: 280px; font-size: 18px; border-right: 1px solid gray;">
-				<a class="nav-link" style="cursor: pointer; font-weight: bold; color: white;" data-toggle="collapse" href="#chungloai"> 
+				style="width: 280px; font-size: 18px; ">
+				<a class="nav-link" style="cursor: pointer; font-weight: bold; color: white;" data-toggle="collapse" > 
 				<i class="fa fa-navicon"></i>&nbsp;&nbsp; <span class="danh_muc">DANH MỤC SẢN PHẨM</span>
 			</a>
 			</li>
@@ -141,7 +141,7 @@
 	}
 
 	.list-group-item:hover{
-		color: black;
+		color: red; //
 		font-weight: bold;
 	}
 </style>

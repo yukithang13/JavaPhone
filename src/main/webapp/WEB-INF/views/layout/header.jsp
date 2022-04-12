@@ -38,7 +38,7 @@
 									<ul>
 										<li>
 											<i class="fa fa-shopping-cart" style="color:white;font-size: 30px"></i>
-											<p class="carts"><a href="/cart/view" style="text-decoration: none; color: white">Giỏ hàng</a></p>
+											<p class="carts"><a href="/cart/view" color: white">Giỏ hàng</a></p>
 											<ul>
 												<li>
 													<div class="row">
@@ -63,7 +63,7 @@
 																</c:forEach>
 															</c:when>
 															<c:otherwise>
-																<div style="padding: 10px 10px 10px 30px;">Không có sản phẩm nào trong giỏ hàng!</div>
+																<div style="">Không có sản phẩm nào trong giỏ hàng!</div>
 															</c:otherwise>
 														</c:choose>
 													
@@ -93,7 +93,7 @@
 												</div>
 												<br />
 												<div>
-													<a style="width: 360px" class="btn btn-primary"
+													<a style= class="btn btn-primary"
 														href="/cart/view">Xem giỏ hàng</a>
 												</div>
 											</div></li>
@@ -105,7 +105,7 @@
 					</div>
 					<div class="col-sm-6">
 						<div class="header-menu">
-							<i class="glyphicon glyphicon-heart" style="color:white;font-size: 30px; padding: 0px 5px 0px 5x"></i> 
+							<i class="glyphicon glyphicon-heart" ;font-size: 30px; padding: 0px 5px 0px 5x"></i> 
 								<a class="splike" href="/product/favo" style="color: white"> Sản phẩm đã thích</a>
 						</div>
 					</div>
